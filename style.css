@@ -1,0 +1,49 @@
+/* style.css */
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  nav {
+    background-color: #333;
+    color: red;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    color: yellow;
+    text-decoration: none;
+    padding: 8px;
+  }
+  
+  /* Flexbox layout for content */
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+  }
+  
+  /* Responsive layout using media queries */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
